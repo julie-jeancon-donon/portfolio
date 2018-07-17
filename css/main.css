@@ -97,7 +97,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+h1{
+  display:none;
+}
    .first_page{
      color:#dfdede;
      height: 100vh;
@@ -108,10 +110,7 @@ textarea {
      flex-direction: column;
   }
 
-  header{
-    height: 80px;
 
-  }
 
   .navbar-header, .navbar, .container-fluid, .menu_right, .menu_right li a, .navbar-header a {
     height: 80px;
@@ -149,11 +148,63 @@ textarea {
 
 
 .presentation{
+  width: 75%;
+  height:20%;
+  background-color: white;
+  opacity: 0.5;
   text-align: center;
-  font-size: 40px;
+  padding-top:45px;
+  font-size: 20px;
   margin: auto;
-  color:#f1f1f1;
+  color:#222222;
 }
+
+.menu_right{
+  display: none;
+}
+
+.navbar_mobile{
+  border: 1px solid red;
+  width:20%;
+}
+
+
+.menu_burger{
+  width: 50px;
+  position: fixed;
+  top: 25px;
+  right:5px;
+}
+
+.menu_burger a{
+  color: #717372;
+}
+
+h2{
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+
+.menu_burger{
+  display:none;
+}
+
+.menu_right{
+  display: block;
+}
+
+.presentation{
+  width: 50%;
+  font-size:20px;
+}
+
+}
+
+
+
+
+
 
 
 
